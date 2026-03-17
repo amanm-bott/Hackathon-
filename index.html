@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Hackathon</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+color:white;
+background:black;
+overflow-x:hidden;
+}
+
+/* Animated stars background */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:200%;
+height:200%;
+background-image:radial-gradient(white 1px, transparent 1px);
+background-size:50px 50px;
+animation:moveStars 60s linear infinite;
+opacity:0.4;
+}
+
+@keyframes moveStars{
+from{transform:translate(0,0);}
+to{transform:translate(-500px,-500px);}
+}
+
+/* Title */
+
+h1{
+margin-top:40px;
+font-size:38px;
+}
+
+/* Container */
+
+.container{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:30px;
+margin-top:40px;
+}
+
+/* Card */
+
+.card{
+display:flex;
+align-items:center;
+width:500px;
+background:white;
+color:black;
+border-radius:15px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+transition:0.4s;
+gap:20px;
+}
+
+/* Hover */
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* Square Profile */
+
+.profile{
+width:120px;
+height:120px;
+background:#ccc;
+border-radius:10px;
+flex-shrink:0;
+}
+
+/* Text Section */
+
+.info{
+text-align:left;
+}
+
+h2{
+margin:0;
+}
+
+h3{
+margin:5px 0;
+color:#555;
+}
+
+p{
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Oodo Hackathon x Parul University</h1>
+
+<div class="container">
+
+<div class="card">
+<div class="profile"></div>
+<div class="info">
+<h2>Team Leader</h2>
+<h3>Mohid Raiyan</h3>
+<p>LeetCode specialist and well experienced in coding and problem solving.</p>
+</div>
+</div>
+<br>
+
+
+<div class="card">
+<div class="profile"></div>
+<div class="info">
+<h2>Team Member</h2>
+<h3>MD Farhan</h3>
+<p>Beginner in LeetCode and understands problems quickly to find solutions.</p>
+</div>
+</div>
+<br>
+
+
+
+<div class="card">
+<div class="profile"></div>
+<div class="info">
+<h2>Team Member</h2>
+<h3>Aman Mulla</h3>
+<p>Beginner in LeetCode and skilled in HTML and CSS development.</p>
+</div>
+</div>
+<br>
+
+
+</div>
+
+</body>
+</html>
